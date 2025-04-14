@@ -10,6 +10,10 @@ One function per operation, in order.
 import math
 
 
+
+import math
+
+
 # First example
 
 def add(a, b): 
@@ -38,3 +42,33 @@ def log(a, b):
 
 def exp(a, b):
     return math.pow(a, b)
+
+
+def subtract(a, b):
+    return a - b
+
+
+def multiply(a, b):
+    return a * b
+
+
+def logarithm(a, b):
+    if a != 0:
+        return math.log(b, a)
+    else:
+        raise ValueError()
+
+
+def exponent(a, b):
+    return a ** b
+
+
+def square_root(a):
+    if a > 0:
+        return math.sqrt(a)
+    else:
+        raise ValueError()
+    
+
+def hypotenuse(a, b):
+    return math.hypot(a, b)
