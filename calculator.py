@@ -10,10 +10,6 @@ One function per operation, in order.
 import math
 
 
-
-import math
-
-
 # First example
 
 def add(a, b): 
@@ -68,7 +64,7 @@ def square_root(a):
         return math.sqrt(a)
     else:
         raise ValueError()
-    
+
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
