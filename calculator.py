@@ -1,3 +1,8 @@
+# https://github.com/NPadilla12/lab10-NP-SF
+# Partner 1: Nicholas Padilla
+# Partner 2: Sayyed Faisal
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
