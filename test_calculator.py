@@ -58,7 +58,7 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, 5)
+            log(0, -5)
         
 
 
