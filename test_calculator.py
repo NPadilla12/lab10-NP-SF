@@ -63,17 +63,18 @@ class TestCalculator(unittest.TestCase):
 
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(hypotenuse(5, 1), 0)
-        self.assertEqual(logarithm(10, 100), 2)
-        self.assertEqual(logarithm(3, 81), 4)
+        self.assertEqual(hypotenuse(3, 4), 5.0)
+        self.assertEqual(hypotenuse(8, 15), 17.0)
+        self.assertEqual(hypotenuse(12, 35), 37.0)
 
 
-    # def test_sqrt(self): # 3 assertions
-    #     # Test for invalid argument, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #    square_root(NUM)
-    #     # Test basic function
-    #     fill in code
+    def test_sqrt(self): # 3 assertions
+        with self.assertRaises(ValueError):
+            square_root(0)
+        self.assertEqual(square_root(4), 2)
+        self.assertEqual(square_root(9), 3)
+        self.assertEqual(square_root(16), 4)
+        
     ##########################
 
 
