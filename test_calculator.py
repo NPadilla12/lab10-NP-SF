@@ -24,13 +24,16 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
 
-    # def test_multiply(self): # 3 assertions
-    #     fill in code
+    def test_multiply(self): # 3 assertions
+        self.assertEqual(mul(2, 2), 4)
+        self.assertEqual(mul(7, 10), 70)
+        self.assertEqual(mul(10, -1), -10)
 
 
-    # def test_divide(self): # 3 assertions
-    #     fill in code
-    # ##########################
+    def test_divide(self): # 3 assertions
+        self.assertEqual(div(2, 2), 4)
+        self.assertEqual(div(7, 10), 70)
+        self.assertEqual(div(10, -1), -10)
 
 
     ######## Partner 2
