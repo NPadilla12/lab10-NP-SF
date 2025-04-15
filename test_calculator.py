@@ -62,8 +62,10 @@ class TestCalculator(unittest.TestCase):
         
 
 
-    # def test_hypotenuse(self): # 3 assertions
-    #     fill in code
+    def test_hypotenuse(self): # 3 assertions
+        self.assertEqual(hypotenuse(5, 1), 0)
+        self.assertEqual(logarithm(10, 100), 2)
+        self.assertEqual(logarithm(3, 81), 4)
 
 
     # def test_sqrt(self): # 3 assertions
