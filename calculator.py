@@ -38,10 +38,12 @@ def subtract(a, b):
     return a - b
 
 def logarithm(a, b):
-    if a != 0:
-        return math.log(b, a)
+    if a <= 0:
+        raise ValueError
+    elif b == 0:
+        raise ValueError
     else:
-        raise ValueError()
+        return math.log(b, a)
 
 
 def square_root(a):
