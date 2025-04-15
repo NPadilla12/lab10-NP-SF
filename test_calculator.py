@@ -51,14 +51,14 @@ class TestCalculator(unittest.TestCase):
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(-5, 0)
+            logarithm(-5, 0)
 
 
     ######## Partner 1
 
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, -5)
+            logarithm(0, -5)
         
 
 
